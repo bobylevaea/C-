@@ -322,3 +322,40 @@
 // int[,] myArray = FillArrayInSpiral(4, 4);
 // Console.WriteLine();
 // Show2dArray(myArray);
+
+
+
+// def fill_array_in_spiral(rows, columns):
+//     spiral_array = [[0] * columns for _ in range(rows)]
+
+//     i, j = 0, 0
+//     right_direct, down_direct = 1, 0
+//     direct = 0
+//     side_length = columns
+
+//     for item in range(rows * columns):
+//         spiral_array[i][j] = item + 1
+
+//         side_length -= 1
+//         if side_length == 0:
+//             side_length = columns * (direct % 2) + rows * ((direct + 1) % 2) - (direct // 2 - 1) - 2
+
+//             temp = right_direct
+//             right_direct = -down_direct
+//             down_direct = temp
+//             direct += 1
+
+//         i += down_direct
+//         j += right_direct
+
+//     return spiral_array
+
+// def show_2d_array(array):
+//     for row in array:
+//         for element in row:
+//             print(element, end=" ")
+//         print()
+//     print()
+
+// my_array = fill_array_in_spiral(4, 4)
+// show_2d_array(my_array)
